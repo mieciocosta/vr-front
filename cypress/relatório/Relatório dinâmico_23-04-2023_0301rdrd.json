@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-04-23T06:01:00.287Z",
+    "end": "2023-04-23T06:01:00.444Z",
+    "duration": 157,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a374d79c-a7a4-49d8-8bbc-5aba1ab5c7b8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Features\\login.feature",
+      "file": "cypress\\e2e\\Features\\login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "29309b49-ce0c-4aff-95d2-82a2cd0ea8b7",
+          "title": "Achar locais para usar meu cartão VR",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar o mapa de aceitação",
+              "fullTitle": "Achar locais para usar meu cartão VR Verificar o mapa de aceitação",
+              "timedOut": null,
+              "duration": 124,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit",
+                "estack": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit\n    at Context.visit (https://www.vr.com.br/__cypress/runner/cypress_runner.js:141899:78)\n    at wrapped (https://www.vr.com.br/__cypress/runner/cypress_runner.js:157498:43)\nFrom Your Spec Code:\n    at vrPage.visitHomePage (cypress/support/page/vr.page.js:12:7)\n    at Context.eval (cypress/support/steps/vr.steps.js:7:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "cf4fc271-622c-4702-a30c-567384831f5b",
+              "parentUUID": "29309b49-ce0c-4aff-95d2-82a2cd0ea8b7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cf4fc271-622c-4702-a30c-567384831f5b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 124,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Relatório dinâmico",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/relatório",
+        "overwrite": true,
+        "reportFilename": "Relatório dinâmico",
+        "timestamp": "dd/mm/yyyy_HHMMSS",
+        "charts": true,
+        "reportPageTitle": "custom-title"
+      },
+      "version": "6.0.1"
+    }
+  }
+}

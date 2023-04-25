@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-04-24T13:19:39.410Z",
+    "end": "2023-04-24T13:19:49.455Z",
+    "duration": 10045,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5be4428f-ca4a-41e1-8865-2694701160f3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Features\\vr.feature",
+      "file": "cypress\\e2e\\Features\\vr.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fd89ba10-4fbd-4f10-9aa9-68db7e0dcdd7",
+          "title": "Achar locais para usar meu cartão VR",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar o mapa de aceitação",
+              "fullTitle": "Achar locais para usar meu cartão VR Verificar o mapa de aceitação",
+              "timedOut": null,
+              "duration": 9916,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "ReferenceError: BTN_FILTRAR_MAPA is not defined",
+                "estack": "ReferenceError: BTN_FILTRAR_MAPA is not defined\n    at vrElements.eval [as btnFiltrarMapa] (cypress/support/elements/vr.elements.js:29:4)\n    at vrPage.verifyGoogleMapIsDisplayed (cypress/support/page/vr.page.js:28:19)\n    at Context.eval (cypress/support/steps/vr.steps.js:19:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "3a89743e-d1b7-4a4d-a04a-a3042b3d238b",
+              "parentUUID": "fd89ba10-4fbd-4f10-9aa9-68db7e0dcdd7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3a89743e-d1b7-4a4d-a04a-a3042b3d238b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9916,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Relatório dinâmico",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/relatório",
+        "overwrite": true,
+        "reportFilename": "Relatório dinâmico",
+        "timestamp": "dd/mm/yyyy_HHMMSS",
+        "charts": true,
+        "reportPageTitle": "custom-title"
+      },
+      "version": "6.0.1"
+    }
+  }
+}

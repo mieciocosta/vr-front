@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-24T13:40:42.301Z",
+    "end": "2023-04-24T13:40:54.804Z",
+    "duration": 12503,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1546e897-af5b-475d-9694-e4684c752864",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Features\\vr.feature",
+      "file": "cypress\\e2e\\Features\\vr.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4cb5d0d8-e60b-4cd9-8014-69d79381220f",
+          "title": "Achar locais para usar meu cartão VR",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar o mapa de aceitação",
+              "fullTitle": "Achar locais para usar meu cartão VR Verificar o mapa de aceitação",
+              "timedOut": null,
+              "duration": 12422,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f9604cc4-fde2-48f4-8ddd-3ff4d3dd06ca",
+              "parentUUID": "4cb5d0d8-e60b-4cd9-8014-69d79381220f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f9604cc4-fde2-48f4-8ddd-3ff4d3dd06ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12422,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Relatório dinâmico",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/relatório",
+        "overwrite": true,
+        "reportFilename": "Relatório dinâmico",
+        "timestamp": "dd/mm/yyyy_HHMMSS",
+        "charts": true,
+        "reportPageTitle": "custom-title"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
